@@ -36,7 +36,7 @@ options:
 ### SVG2PNG
 
 ```
-$ python3 convert_file_format.py --convert_type svg --input_file <input_file> --output_file <output_file>
+$ python3 convert_file_format.py --convert_type svg2png --input_file <input_file> --output_file <output_file>
 ```
 
 ## Modules and Licenses
