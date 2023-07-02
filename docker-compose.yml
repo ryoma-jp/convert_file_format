@@ -1,0 +1,8 @@
+services:
+  convert_file_format:
+    build: "./docker"
+    tty: true
+    volumes:
+      - type: bind
+        source: "."
+        target: "/work"

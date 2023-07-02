@@ -1,0 +1,3 @@
+Sphinx==7.0.0
+pip-licenses==4.3.2
+svglib==1.5.1
