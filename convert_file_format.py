@@ -1,9 +1,11 @@
 
 import argparse
 from lib.svg2png import svg2png
+from lib.mp42gif import mp42gif
 
 SUPPORT_CONVERT = [
     'svg2png',
+    'mp42gif',
 ]
 
 def arg_parser():
@@ -41,6 +43,8 @@ def main():
     
     if (args.convert_type == 'svg2png'):
         svg2png(args.input_file, args.output_file)
+    elif (args.convert_type == 'mp42gif'):
+        mp42gif(args.input_file, args.output_file)
     else:
         print(f'{args.convert_type} is NOT supported')
     
