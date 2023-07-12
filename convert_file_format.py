@@ -2,10 +2,14 @@
 import argparse
 from lib.svg2png import svg2png
 from lib.mp42gif import mp42gif
+from lib.png2ico import png2ico
+from lib.png2svg import png2svg
 
 SUPPORT_CONVERT = [
     'svg2png',
     'mp42gif',
+    'png2ico',
+    'png2svg',
 ]
 
 def arg_parser():
@@ -45,6 +49,10 @@ def main():
         svg2png(args.input_file, args.output_file)
     elif (args.convert_type == 'mp42gif'):
         mp42gif(args.input_file, args.output_file)
+    elif (args.convert_type == 'png2ico'):
+        png2ico(args.input_file, args.output_file)
+    elif (args.convert_type == 'png2svg'):
+        png2svg(args.input_file, args.output_file)
     else:
         print(f'{args.convert_type} is NOT supported')
     

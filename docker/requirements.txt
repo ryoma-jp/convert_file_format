@@ -4,3 +4,4 @@ svglib==1.5.1
 rlPyCairo==0.3.0
 opencv-python==4.8.0.74
 Pillow==10.0.0
+aspose-words==23.6.0
