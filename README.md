@@ -9,6 +9,7 @@ This program convers the file format.
 - png -> ico
 - png -> svg
 - mp4(H.265) -> mp4(H.264)
+- img(s) -> gif
 
 ## Prepare
 
@@ -82,6 +83,15 @@ $ python3 convert_file_format.py --convert_type png2svg --input_file <input_file
 ```
 $ python3 convert_file_format.py --convert_type mp4_h265toh264 --input_file <input_file> --output_file <output_file>
 ```
+
+### Image files to GIF
+
+```
+$ python3 convert_file_format.py --convert_type imgs2gif --input_file <input directory path> --output_file <output_file>
+```
+
+#### Output sample of ``./sample_data/png/light_shifted_images``
+![run_imgs2gif](./images/run_imgs2gif.gif)
 
 ## Modules and Licenses
 

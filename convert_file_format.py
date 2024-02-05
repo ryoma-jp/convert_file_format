@@ -5,6 +5,7 @@ from lib.mp42gif import mp42gif
 from lib.png2ico import png2ico
 from lib.png2svg import png2svg
 from lib.mp4_h265toh264 import mp4_h265toh264
+from lib.imgs2gif import imgs2gif
 
 SUPPORT_CONVERT = [
     'svg2png',
@@ -12,6 +13,7 @@ SUPPORT_CONVERT = [
     'png2ico',
     'png2svg',
     'mp4_h265toh264',
+    'imgs2gif',
 ]
 
 def arg_parser():
@@ -57,6 +59,8 @@ def main():
         png2svg(args.input_file, args.output_file)
     elif (args.convert_type == 'mp4_h265toh264'):
         mp4_h265toh264(args.input_file, args.output_file)
+    elif (args.convert_type == 'imgs2gif'):
+        imgs2gif(args.input_file, args.output_file)
     else:
         print(f'{args.convert_type} is NOT supported')
     
